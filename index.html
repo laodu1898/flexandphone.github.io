@@ -86,7 +86,10 @@
     <!--第六部分同时也是底部部分-->
     <footer><div>Copyright&#169;2017 All Rights Reserved</div></footer>
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	</div>
+	<script type="text/javascript" >		
+      $(".header-list-button").click(function(){
+        $(".header-list>ul>li:nth-child(2)").children().stop().slideToggle(300);
+      })
+	</script>
 </body>
 </html>
