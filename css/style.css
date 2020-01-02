@@ -1,0 +1,251 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.clear-fix:after{
+  content: "";
+  clear: both;
+}
+.wrapper{
+	width: 768px;
+	margin:0 auto;
+}/*header部分*/
+header{
+	width: 100%;
+	height: 90vh;
+	background-color: #B2C5CC;
+	text-align: center;  
+	color: #757575;
+	display: flex;
+	flex-direction: column;
+}
+.header-active{
+	color: #afafaf;
+}
+.header-list{
+	width: 100%;
+	margin:0 auto;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	margin-bottom: 15vh;
+	display: flex;
+	justify-content: space-between;
+}
+.header-list>ul{
+	list-style: none;
+	width: 70%;
+	margin:0 auto;
+}
+.header-list>ul ul{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.ipone6-header{
+	color: white;
+	display: none;
+	font-size: 24px;
+}
+.header-middle{
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	margin:0 auto;
+	margin-bottom: 20vh;
+}
+.header-middle>span{
+	display: block;
+	color: white;
+	margin-top: 10vh;
+}
+.header-button{
+	height: 5vh;
+	width: 25%;
+	background-color: rgb(255, 255, 255);
+	margin:0 auto;
+	line-height: 5vh;
+}
+/*header部分 ipone6媒体响应式查询*/
+@media screen and (max-width: 767px){
+/*第一部分*/
+	.wrapper{width: 100%;}
+	.header-list{
+		background-color: #7EA6B1;
+		position: relative;
+	}
+	.ipone6-header{
+		display: block;
+	}
+	.header-list>ul{
+		width: 100%;
+	}
+	.header-list>ul>li:nth-child(1){
+        height: 5vh;
+        line-height: 5vh;
+	}
+
+	.header-list>ul ul{
+	display: none;
+	width: 100%;
+    }
+	.header-list>ul ul li{
+     width: 100%;
+     border-bottom: 1px solid white;
+     height: 5vh;
+     text-align: center;
+     color: white;
+     line-height: 5vh;
+	}
+	.header-list>ul ul li:nth-child(1){
+     border-top: 1px solid white;
+	}
+    .header-list-button{
+    	height: 15px;
+    	width: 15px;
+    	position: absolute;
+    	border:1px solid white;
+    	right: 5vw;
+    }
+}
+/*第二部分*/
+.second-part{
+	width: 100%;
+	height: 9.6vh;
+	color:#bababa;
+	border-bottom: 1px #bababa solid;
+	display: flex;
+	justify-content:  space-around;
+	align-items: center;
+}
+.second-active{
+	color: #545454;
+}
+/*第二部分 ipone6媒体响应式查询*/
+
+/*第三部分*/
+article{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color:#bababa;
+	align-items: center;
+}
+article>.h1{
+	font-size: 24px;
+	color: #545454;
+	margin-top: 15vh;
+	margin-bottom: 4vh;
+}
+article>.wen{
+	width: 55%;
+	text-align: left;
+}
+/*第四部分*/
+.chain{
+	width: 100%;
+	height: 10vh;
+	background-color:  #afafaf;
+}
+.chain>.wai{
+	width: 90%;
+	height: 100%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-around;;
+	align-items: center;
+	color: #545454;
+}
+
+
+/*第五部分*/
+.lesson{
+	width: 100%;
+	height: 90vh;
+	background: url(../img/bg.jpg) no-repeat center center;
+	background-size:100% 90vh;
+	z-index: -1;
+	overflow: hidden;
+}
+.lesson>.lesson-wai{
+	width: 90%;
+	height: 100%;
+	margin:0 auto;
+}
+.lesson>.lesson-wai>.lesson-name{
+	color: #545454;
+	margin-top: 8vh;
+	margin-bottom: 2vh;
+	margin-left: 0.5vh;
+}
+.lesson>.lesson-wai>.lesson-pi{
+	width: 100%;
+	height: 100%;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
+}
+.lesson>.lesson-wai>.lesson-pi>.lesson-pi-item{
+    width: 32%;
+    height: 28%;
+}
+.lesson>.lesson-wai>.lesson-pi>.lesson-pi-item>img{
+	width: 100%;
+	height: 100%;
+}
+.lesson>.lesson-wai>.lesson-pi>.lesson-pi-item:nth-child(4){
+	position: absolute;
+	top: 29.5%;
+	left: 0.5vh;
+}
+.lesson>.lesson-wai>.lesson-pi>.lesson-pi-item:nth-child(5){
+    position: absolute;
+	top: 29.5%;
+}
+.lesson>.lesson-wai>.lesson-pi>.lesson-pi-item:nth-child(6){
+	position: absolute;
+	top: 29.5%;
+	right: 0.5vh;
+}
+@media screen and (max-width: 768px){
+    /*第五部分*/
+    .lesson>.lesson-wai>.lesson-pi>.lesson-pi-item{
+    width: 45%;
+    height: 23%;
+    }
+    .lesson>.lesson-wai>.lesson-pi>.lesson-pi-item:nth-child(3){
+	position: absolute;
+	top: 25%;
+	right: 1.3vh;
+    }
+    .lesson>.lesson-wai>.lesson-pi>.lesson-pi-item:nth-child(4){
+	position: absolute;
+	top: 25%;
+	left: 1.3vh;
+    }
+    .lesson>.lesson-wai>.lesson-pi>.lesson-pi-item:nth-child(5){
+    position: absolute;
+	top: 50%;
+	left: 1.3vh;
+    }
+    .lesson>.lesson-wai>.lesson-pi>.lesson-pi-item:nth-child(6){
+	position: absolute;
+	top: 50%;
+	right: 1.3vh;
+    }
+}
+/*第六部分*/
+footer{
+	width: 100%;
+	height: 10vh;
+    background-color:  #afafaf;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+}
